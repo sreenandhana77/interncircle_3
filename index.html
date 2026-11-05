@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="PricePilot – Simple Plans, Smarter Choices. Flexible, transparent SaaS subscription pricing designed for creators, teams, and enterprises.">
+  <meta name="theme-color" content="#0B1020">
+  <title>PricePilot – Simple Plans, Smarter Choices | Responsive SaaS Pricing</title>
+
+  <!-- Google Fonts: Inter & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Core Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Background Glow Accents -->
+  <div class="bg-glow bg-glow-1" aria-hidden="true"></div>
+  <div class="bg-glow bg-glow-2" aria-hidden="true"></div>
+  <div class="bg-glow bg-glow-3" aria-hidden="true"></div>
+
+  <!-- Header / Navigation Bar -->
+  <header class="site-header" id="header">
+    <div class="container nav-container">
+      <a href="#hero" class="brand-logo" aria-label="PricePilot Home">
+        <span class="logo-icon" aria-hidden="true">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="url(#logo-grad-1)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M2 17L12 22L22 17" stroke="url(#logo-grad-2)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M2 12L12 17L22 12" stroke="url(#logo-grad-1)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <defs>
+              <linearGradient id="logo-grad-1" x1="2" y1="2" x2="22" y2="12" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#A78BFA"/>
+                <stop offset="1" stop-color="#8B5CF6"/>
+              </linearGradient>
+              <linearGradient id="logo-grad-2" x1="2" y1="12" x2="22" y2="22" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#8B5CF6"/>
+                <stop offset="1" stop-color="#34D399"/>
+              </linearGradient>
+            </defs>
+          </svg>
+        </span>
+        <span class="logo-text">Price<span class="text-accent">Pilot</span></span>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="nav-menu" id="navMenu" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#hero" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="#features" class="nav-link">Features</a></li>
+          <li class="nav-item"><a href="#pricing" class="nav-link">Pricing</a></li>
+          <li class="nav-item"><a href="#faq" class="nav-link">FAQ</a></li>
+        </ul>
+      </nav>
+
+      <!-- Navigation Action & Mobile Hamburger -->
+      <div class="nav-actions">
+        <a href="#pricing" class="btn btn-secondary nav-cta">Get Started</a>
+        <button type="button" class="mobile-toggle" id="mobileMenuBtn" aria-expanded="false" aria-controls="navMenu" aria-label="Toggle navigation menu">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <!-- Hero Section -->
+    <section class="hero-section" id="hero">
+      <div class="container hero-container">
+        <div class="pill-badge hero-pill" data-aos="fade-up">
+          <span class="pill-dot" aria-hidden="true"></span>
+          <span>SIMPLE. FLEXIBLE. TRANSPARENT.</span>
+        </div>
+
+        <h1 class="hero-title">
+          Plans that grow with <span class="gradient-text">your ambition.</span>
+        </h1>
+
+        <p class="hero-subtitle">
+          Powerful tools, flexible pricing, and everything you need to turn your ideas into reality.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#pricing" class="btn btn-primary btn-lg">
+            <span>Explore Plans</span>
+            <svg class="btn-icon" width="18" height="18" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+            </svg>
+          </a>
+          <a href="#features" class="btn btn-ghost btn-lg">Why PricePilot?</a>
+        </div>
+
+        <!-- Trust Badges -->
+        <div class="hero-trust">
+          <span class="trust-item">
+            <svg class="trust-icon" width="16" height="16" viewBox="0 0 20 20" fill="#34D399" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+            No hidden setup fees
+          </span>
+          <span class="trust-item">
+            <svg class="trust-icon" width="16" height="16" viewBox="0 0 20 20" fill="#34D399" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+            14-day risk-free trial
+          </span>
+          <span class="trust-item">
+            <svg class="trust-icon" width="16" height="16" viewBox="0 0 20 20" fill="#34D399" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+            Cancel anytime
+          </span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing-section" id="pricing" aria-labelledby="pricing-heading">
+      <div class="container">
+        <!-- Section Header & Billing Toggle -->
+        <div class="pricing-header">
+          <h2 class="section-title" id="pricing-heading">Choose the perfect plan</h2>
+          <p class="section-subtitle">
+            Scale seamlessly from solopreneur to enterprise. Switch or cancel whenever you wish.
+          </p>
+
+          <!-- Interactive Billing Toggle -->
+          <div class="billing-toggle-container" role="region" aria-label="Billing frequency selection">
+            <div class="billing-toggle-wrapper">
+              <button 
+                type="button" 
+                class="billing-btn active" 
+                id="billingMonthlyBtn" 
+                data-period="monthly" 
+                aria-pressed="true"
+                aria-label="Switch to monthly billing">
+                Monthly
+              </button>
+              <button 
+                type="button" 
+                class="billing-btn" 
+                id="billingYearlyBtn" 
+                data-period="yearly" 
+                aria-pressed="false"
+                aria-label="Switch to yearly billing and save 20 percent">
+                Yearly
+              </button>
+              <div class="toggle-active-indicator" aria-hidden="true"></div>
+            </div>
+
+            <!-- Discount Savings Badge -->
+            <div class="discount-badge" id="discountBadge">
+              <svg width="14" height="14" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                <path fill-rule="evenodd" d="M5 2a2 2 0 00-2 2v14l3.5-2 3.5 2 3.5-2 3.5 2V4a2 2 0 00-2-2H5zm4.707 5.707a1 1 0 00-1.414-1.414l-3 3a1 1 0 000 1.414l3 3a1 1 0 001.414-1.414L8.414 10l1.293-1.293zm4 0a1 1 0 00-1.414-1.414L11 8.586 9.707 7.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l3-3z" clip-rule="evenodd" />
+              </svg>
+              <span>Save 20% with Yearly</span>
+            </div>
+          </div>
+          
+          <!-- Dynamic Period Announcer for Screen Readers -->
+          <p class="sr-only" id="billingPeriodStatus" aria-live="polite">Current billing period is Monthly.</p>
+        </div>
+
+        <!-- 3 Responsive Pricing Cards Grid -->
+        <div class="pricing-grid">
+          
+          <!-- Plan 1: Starter -->
+          <article class="pricing-card card-starter" aria-labelledby="plan-starter-title">
+            <div class="card-header">
+              <div class="plan-badge-wrapper">
+                <span class="badge badge-starter" id="plan-starter-badge">STARTER</span>
+              </div>
+              <h3 class="plan-name" id="plan-starter-title">Starter</h3>
+              <p class="plan-description">Everything you need to get started.</p>
+            </div>
+
+            <div class="card-pricing">
+              <div class="price-wrapper">
+                <span class="currency-symbol">₹</span>
+                <span class="price-value" data-monthly="499" data-yearly="4790">499</span>
+              </div>
+              <span class="billing-period-label">/ month</span>
+            </div>
+
+            <div class="card-savings-note" aria-hidden="true">
+              <span class="savings-text">&nbsp;</span>
+            </div>
+
+            <div class="card-action">
+              <button 
+                type="button" 
+                class="btn btn-outline card-btn" 
+                data-plan="Starter" 
+                aria-label="Get Started with Starter plan">
+                Get Started
+              </button>
+            </div>
+
+            <div class="card-divider" aria-hidden="true"></div>
+
+            <div class="card-features">
+              <p class="features-title">Starter includes:</p>
+              <ul class="features-list">
+                <li class="feature-item">
+                  <svg class="feature-icon check" width="18" height="18" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                  <span>Access to basic features</span>
+                </li>
+                <li class="feature-item">
+                  <svg class="feature-icon check" width="18" height="18" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                  <span>5 active projects</span>
+                </li>
+                <li class="feature-item">
+                  <svg class="feature-icon check" width="18" height="18" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                  <span>5 GB cloud storage</span>
+                </li>
+                <li class="feature-item">
+                  <svg class="feature-icon check" width="18" height="18" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                  <span>Standard support</span>
+                </li>
+                <li class="feature-item">
+                  <svg class="feature-icon check" width="18" height="18" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                  <span>Basic analytics</span>
+                </li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- Plan 2: Professional (MOST POPULAR - Highlighted) -->
+          <article class="pricing-card card-popular featured-card" aria-labelledby="plan-pro-title">
+            <!-- Ribbon Badge -->
+            <div class="ribbon-wrapper" aria-hidden="true">
+              <div class="ribbon">MOST POPULAR</div>
+            </div>
+
+            <div class="card-header">
+              <div class="plan-badge-wrapper">
+                <span class="badge badge-popular" id="plan-pro-badge">RECOMMENDED</span>
+              </div>
+              <h3 class="plan-name" id="plan-pro-title">Professional</h3>
+              <p class="plan-description">More power for growing teams and creators.</p>
+            </div>
+
+            <div class="card-pricing">
+              <div class="price-wrapper">
+                <span class="currency-symbol">₹</span>
+                <span class="price-value" data-monthly="999" data-yearly="9590">999</span>
+              </div>
+              <span class="billing-period-label">/ month</span>
+            </div>
+
+            <div class="card-savings-note" aria-hidden="true">
+              <span class="savings-text">&nbsp;</span>
+            </div>
+
+            <div class="card-action">
+              <button 
+                type="button" 
+                class="btn btn-primary card-btn pulse-glow" 
+                data-plan="Professional" 
+                aria-label="Choose Professional plan">
+                Choose Pro
+              </button>
+            </div>
+
+            <div class="card-divider" aria-hidden="true"></div>
+
+            <div class="card-features">
+              <p class="features-title">Everything in Starter, plus:</p>
+              <ul class="features-list">
+                <li class="feature-item">
+                  <svg class="feature-icon check-accent" width="18" height="18" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                  <span><strong>Unlimited</strong> projects</span>
+                </li>
+                <li class="feature-item">
+                  <svg class="feature-icon check-accent" width="18" height="18" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                  <span>50 GB cloud storage</span>
+                </li>
+                <li class="feature-item">
+                  <svg class="feature-icon check-accent" width="18" height="18" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                  <span>Priority email support</span>
+                </li>
+                <li class="feature-item">
+                  <svg class="feature-icon check-accent" width="18" height="18" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                  <span>Advanced analytics & reporting</span>
+                </li>
+                <li class="feature-item">
+                  <svg class="feature-icon check-accent" width="18" height="18" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                  <span>Team collaboration tools</span>
+                </li>
+                <li class="feature-item">
+                  <svg class="feature-icon check-accent" width="18" height="18" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                  <span>Custom workspace branding</span>
+                </li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- Plan 3: Enterprise (BEST VALUE) -->
+          <article class="pricing-card card-enterprise" aria-labelledby="plan-enterprise-title">
+            <!-- Ribbon Badge -->
+            <div class="ribbon-wrapper ribbon-enterprise" aria-hidden="true">
+              <div class="ribbon ribbon-emerald">BEST VALUE</div>
+            </div>
+
+            <div class="card-header">
+              <div class="plan-badge-wrapper">
+                <span class="badge badge-enterprise" id="plan-enterprise-badge">ORGANIZATIONS</span>
+              </div>
+              <h3 class="plan-name" id="plan-enterprise-title">Enterprise</h3>
+              <p class="plan-description">Advanced capabilities for ambitious organizations.</p>
+            </div>
+
+            <div class="card-pricing">
+              <div class="price-wrapper">
+                <span class="currency-symbol">₹</span>
+                <span class="price-value" data-monthly="1999" data-yearly="19190">1,999</span>
+              </div>
+              <span class="billing-period-label">/ month</span>
+            </div>
+
+            <div class="card-savings-note" aria-hidden="true">
+              <span class="savings-text">&nbsp;</span>
+            </div>
+
+            <div class="card-action">
+              <button 
+                type="button" 
+                class="btn btn-outline card-btn" 
+                data-plan="Enterprise" 
+                aria-label="Get Enterprise plan">
+                Get Enterprise
+              </button>
+            </div>
+
+            <div class="card-divider" aria-hidden="true"></div>
+
+            <div class="card-features">
+              <p class="features-title">Everything in Pro, plus:</p>
+              <ul class="features-list">
+                <li class="feature-item">
+                  <svg class="feature-icon check" width="18" height="18" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                  <span><strong>Unlimited</strong> cloud storage</span>
+                </li>
+                <li class="feature-item">
+                  <svg class="feature-icon check" width="18" height="18" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                  <span>24/7 dedicated support</span>
+                </li>
+                <li class="feature-item">
+                  <svg class="feature-icon check" width="18" height="18" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                  <span>Advanced enterprise security (SSO)</span>
+                </li>
+                <li class="feature-item">
+                  <svg class="feature-icon check" width="18" height="18" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                  <span>Custom integrations & API access</span>
+                </li>
+                <li class="feature-item">
+                  <svg class="feature-icon check" width="18" height="18" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                  <span>Role-based team management</span>
+                </li>
+                <li class="feature-item">
+                  <svg class="feature-icon check" width="18" height="18" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                  <span>Priority updates & early access</span>
+                </li>
+              </ul>
+            </div>
+          </article>
+
+        </div>
+
+        <p class="pricing-disclaimer">
+          All subscription plans come with an automatic 14-day money-back guarantee. Prices shown in INR exclude applicable local taxes.
+        </p>
+      </div>
+    </section>
+
+    <!-- Why Choose PricePilot Section -->
+    <section class="features-section" id="features" aria-labelledby="features-heading">
+      <div class="container">
+        <div class="section-badge-center">
+          <span class="pill-badge">THE VALUE PROPOSITION</span>
+        </div>
+        <h2 class="section-title text-center" id="features-heading">Why Choose PricePilot?</h2>
+        <p class="section-subtitle text-center">
+          Built from the ground up to give creators and teams unmatched speed, peace of mind, and financial clarity.
+        </p>
+
+        <div class="features-grid">
+          <!-- Highlight 1 -->
+          <div class="feature-card">
+            <div class="feature-card-icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+              </svg>
+            </div>
+            <h3 class="feature-card-title">Flexible Pricing</h3>
+            <p class="feature-card-text">
+              Plans that adapt to your needs. Scale up seamlessly as your team expands, or downgrade anytime without penalties or lock-in contracts.
+            </p>
+          </div>
+
+          <!-- Highlight 2 -->
+          <div class="feature-card">
+            <div class="feature-card-icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
+                <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+              </svg>
+            </div>
+            <h3 class="feature-card-title">Secure Platform</h3>
+            <p class="feature-card-text">
+              Your data stays protected. Enterprise-grade AES-256 encryption at rest, automatic daily snapshots, and SOC-2 Type II compliance standards.
+            </p>
+          </div>
+
+          <!-- Highlight 3 -->
+          <div class="feature-card">
+            <div class="feature-card-icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/>
+              </svg>
+            </div>
+            <h3 class="feature-card-title">Reliable Support</h3>
+            <p class="feature-card-text">
+              Help when you need it. Our dedicated customer success engineers are ready round-the-clock via email, chat, and live screen-share sessions.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Frequently Asked Questions Section -->
+    <section class="faq-section" id="faq" aria-labelledby="faq-heading">
+      <div class="container faq-container">
+        <div class="section-badge-center">
+          <span class="pill-badge">CLARITY FIRST</span>
+        </div>
+        <h2 class="section-title text-center" id="faq-heading">Frequently Asked Questions</h2>
+        <p class="section-subtitle text-center">
+          Have questions about billing, features, or plans? We have answers.
+        </p>
+
+        <div class="faq-accordion" id="faqAccordion">
+          <!-- FAQ Item 1 -->
+          <div class="faq-item">
+            <button 
+              type="button" 
+              class="faq-question" 
+              aria-expanded="false" 
+              aria-controls="faq-ans-1" 
+              id="faq-btn-1">
+              <span>Can I change my plan later?</span>
+              <svg class="faq-arrow" width="20" height="20" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+              </svg>
+            </button>
+            <div class="faq-answer" id="faq-ans-1" role="region" aria-labelledby="faq-btn-1" hidden>
+              <div class="faq-answer-inner">
+                Yes, absolutely! You can upgrade, downgrade, or switch your subscription tier at any time from your account settings. When upgrading, changes take effect immediately and are prorated against your remaining billing cycle.
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ Item 2 -->
+          <div class="faq-item">
+            <button 
+              type="button" 
+              class="faq-question" 
+              aria-expanded="false" 
+              aria-controls="faq-ans-2" 
+              id="faq-btn-2">
+              <span>What happens when I switch to yearly billing?</span>
+              <svg class="faq-arrow" width="20" height="20" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+              </svg>
+            </button>
+            <div class="faq-answer" id="faq-ans-2" role="region" aria-labelledby="faq-btn-2" hidden>
+              <div class="faq-answer-inner">
+                Switching to yearly billing gives you an instant ~20% discount on your overall subscription cost. Your payment will be billed once annually, locking in your discounted rate for the entire 12-month period.
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ Item 3 -->
+          <div class="faq-item">
+            <button 
+              type="button" 
+              class="faq-question" 
+              aria-expanded="false" 
+              aria-controls="faq-ans-3" 
+              id="faq-btn-3">
+              <span>Is there a free trial?</span>
+              <svg class="faq-arrow" width="20" height="20" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+              </svg>
+            </button>
+            <div class="faq-answer" id="faq-ans-3" role="region" aria-labelledby="faq-btn-3" hidden>
+              <div class="faq-answer-inner">
+                Yes! Every new account gets a full-featured 14-day free trial on the Professional plan. No credit card is required to sign up, allowing you to test-drive all premium features risk-free.
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ Item 4 -->
+          <div class="faq-item">
+            <button 
+              type="button" 
+              class="faq-question" 
+              aria-expanded="false" 
+              aria-controls="faq-ans-4" 
+              id="faq-btn-4">
+              <span>Can I cancel my subscription?</span>
+              <svg class="faq-arrow" width="20" height="20" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+              </svg>
+            </button>
+            <div class="faq-answer" id="faq-ans-4" role="region" aria-labelledby="faq-btn-4" hidden>
+              <div class="faq-answer-inner">
+                Yes, you can cancel your subscription at any time with a single click from your billing dashboard. You will continue to have full access to your plan until the end of your current paid billing period.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Final CTA Section -->
+    <section class="cta-section">
+      <div class="container">
+        <div class="cta-banner">
+          <div class="cta-content">
+            <h2 class="cta-title">Ready to take your productivity further?</h2>
+            <p class="cta-subtitle">
+              Choose a plan and start building something amazing today.
+            </p>
+          </div>
+          <div class="cta-button-group">
+            <a href="#pricing" class="btn btn-primary btn-lg" id="finalCtaBtn">
+              <span>Get Started Today</span>
+              <svg class="btn-icon" width="18" height="18" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#hero" class="brand-logo" aria-label="PricePilot Home">
+            <span class="logo-icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="#8B5CF6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M2 17L12 22L22 17" stroke="#34D399" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M2 12L12 17L22 12" stroke="#A78BFA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </span>
+            <span class="logo-text">Price<span class="text-accent">Pilot</span></span>
+          </a>
+          <p class="footer-tagline">
+            Simple Plans, Smarter Choices. Designed to streamline your digital subscriptions with complete transparency.
+          </p>
+        </div>
+
+        <div class="footer-links-group">
+          <div class="footer-col">
+            <h4 class="footer-col-title">Product</h4>
+            <ul class="footer-links">
+              <li><a href="#features">Features</a></li>
+              <li><a href="#pricing">Pricing Plans</a></li>
+              <li><a href="#pricing">Enterprise</a></li>
+              <li><a href="#hero">Roadmap</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4 class="footer-col-title">Resources</h4>
+            <ul class="footer-links">
+              <li><a href="#faq">Documentation</a></li>
+              <li><a href="#faq">Help Center</a></li>
+              <li><a href="#faq">API Reference</a></li>
+              <li><a href="#faq">System Status</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4 class="footer-col-title">Company</h4>
+            <ul class="footer-links">
+              <li><a href="#hero">About Us</a></li>
+              <li><a href="#features">Customers</a></li>
+              <li><a href="#faq">Privacy Policy</a></li>
+              <li><a href="#faq">Terms of Service</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="copyright-text">
+          &copy; <span id="currentYear">2026</span> PricePilot Inc. All rights reserved.
+        </p>
+        <p class="demo-notice">
+          Demo pricing for educational purposes. (Internship Task 3)
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Interactive Plan Selection Modal (Meaningful Demo Action) -->
+  <div class="modal-backdrop" id="planModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modalPlanTitle">
+    <div class="modal-box">
+      <button type="button" class="modal-close" id="modalCloseBtn" aria-label="Close confirmation dialog">&times;</button>
+      <div class="modal-icon-wrapper" aria-hidden="true">
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#34D399" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="20 6 9 17 4 12"></polyline>
+        </svg>
+      </div>
+      <span class="modal-eyebrow">PLAN SELECTION CONFIRMED</span>
+      <h3 class="modal-title" id="modalPlanTitle">Starter Plan</h3>
+      <div class="modal-details">
+        <div class="modal-detail-row">
+          <span class="detail-label">Billing Cycle:</span>
+          <span class="detail-value" id="modalBillingCycle">Monthly</span>
+        </div>
+        <div class="modal-detail-row">
+          <span class="detail-label">Total Amount:</span>
+          <span class="detail-value modal-price" id="modalPrice">₹499 / month</span>
+        </div>
+        <div class="modal-detail-row">
+          <span class="detail-label">Free Trial:</span>
+          <span class="detail-value text-success">14 Days Included</span>
+        </div>
+      </div>
+      <p class="modal-note">
+        This is a fully functional demonstration of the PricePilot subscription flow. In production, this proceeds directly to the checkout gateway.
+      </p>
+      <div class="modal-actions">
+        <button type="button" class="btn btn-primary btn-block" id="modalContinueBtn">Proceed to Demo Checkout</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification element -->
+  <div class="toast-container" id="toastContainer" aria-live="polite" aria-atomic="true"></div>
+
+  <!-- Script -->
+  <script src="script.js"></script>
+</body>
+</html>
+
